@@ -1,0 +1,124 @@
+:root
+{
+    --color-text: #5A5A5A;
+    --color-text-secondary: #2E2E2E;
+}
+
+/*init page style*/
+
+/*layout css init*/
+html
+{
+    box-sizing: border-box;
+    height: 100%;
+    font-family: 'Roboto';
+}
+
+body
+{
+    background-image: linear-gradient(#1ABEA8, #1C82F6);
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+*, *::after, *::before
+{
+    box-sizing: inherit;
+    margin: 0%;
+    padding: 0%;
+}
+
+.container
+{
+    width: 50em;
+    height: 50%;
+    display: flex;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+article
+{
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0px 20px 20px 0px;
+}
+
+article h2
+{
+    margin-top: 0.6em;
+    font-size: 3em;
+    font-weight: bold;
+    color: var(--color-text);
+}
+
+.img
+{
+    font-size: 15em;
+    background-color:rgba(90, 90, 90, 56%);
+    height: 100%;
+    padding: 0.1em;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.img span i
+{
+    color: #fff;
+    position: relative;
+    top: 0.3em;
+}
+
+article .button-section
+{
+    margin-bottom: 1em;
+}
+
+article .button-section button
+{
+    font-size: 1.4em;
+    padding: 0.4em;
+    width: 6em;
+    border: none;
+    font-weight: bold;
+    color: var(--color-text-secondary);
+    transition: 0.3s;
+}
+
+article .button-section button:hover
+{
+    background-color: var(--color-text-secondary);
+    color: white;
+}
+
+article .button-section .btn-back
+{
+    position: relative;
+    left: 0.08em;
+    border-radius: 10px 0px 0px 10px;
+    cursor: pointer;
+}
+
+article .button-section .btn-back span
+{
+    transform: rotate(180deg);
+}
+
+article .button-section .btn-next
+{
+    position: relative;
+    right: 0.08em;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+}
+
+/*layout css end*/
